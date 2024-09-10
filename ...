@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Menú del Restaurante</h1>
+    </header>
+    <main>
+        <div class="menu">
+            <button class="tablink" onclick="openCategory(event, 'Entradas')">Entradas</button>
+            <button class="tablink" onclick="openCategory(event, 'PlatosPrincipales')">Platos Principales</button>
+            <button class="tablink" onclick="openCategory(event, 'Postres')">Postres</button>
+            <button class="tablink" onclick="openCategory(event, 'Bebidas')">Bebidas</button>
+        </div>
+
+        <div id="Entradas" class="tabcontent">
+            <h2>Entradas</h2>
+            <p>Ensalada César</p>
+            <p>Bruschettas</p>
+        </div>
+
+        <div id="PlatosPrincipales" class="tabcontent">
+            <h2>Platos Principales</h2>
+            <p>Pizza Margarita</p>
+            <p>Paella</p>
+        </div>
+
+        <div id="Postres" class="tabcontent">
+            <h2>Postres</h2>
+            <p>Tarta de Queso</p>
+            <p>Brownie de Chocolate</p>
+        </div>
+
+        <div id="Bebidas" class="tabcontent">
+            <h2>Bebidas</h2>
+            <p>Cócteles</p>
+            <p>Vinos</p>
+            <p>Cervezas</p>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
